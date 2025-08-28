@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECO PRODUTOS</title>
+
+        <script src="https://kit.fontawesome.com/6d13a662eb.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./src/css/style.css">
+
+        <!-- Referencias 
+            https://atentostore.com.br/collections/mais-vendidos/products/camiseta-estonada-flor 
+            https://uhnika.com.br/collections/vestidos-e-macacoes/products/vestido-midi-manga-curta?_pos=10&_fid=a272ec943&_ss=c&variant=46651289600192
+
+        -->
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+                <div class="container-fluid"> 
+                    <a class="navbar-brand" href="#">ECO PRODUTOS</a> 
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation"> 
+                        <span class="navbar-toggler-icon"></span> 
+                        </button> 
+                        <div class="navbar-collapse collapse" id="navbarsExample03" style=""> 
+                            <!-- <img src="./src/imgs/recycle-icon.png" class="spin" alt="Simbolo de Reciclagem"> -->
+                            <ul class="navbar-nav me-auto mb-2 mb-sm-0"> <li class="nav-item"> 
+                            <a class="nav-link active" aria-current="page" href="#">Home</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#">Categorias</a> 
+                        </li> 
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a> 
+                            <ul class="dropdown-menu"> 
+                                <li><a class="dropdown-item" href="#">Contato</a></li> 
+                                <li><a class="dropdown-item" href="#">Sobre</a></li> 
+                            </ul> 
+                            </li> 
+                        </ul> 
+                        <form role="search"> 
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search"> 
+                        </form> 
+                    </div> 
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div> 
+            </nav>
+        </header>
+        
+        <main>
+            <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel"> 
+                <div class="carousel-indicators"> 
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button> 
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button> 
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button> 
+                </div> 
+
+                <div class="carousel-inner"> 
+                    <div class="carousel-item"> 
+                        <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> <div class="container"> <div class="carousel-caption text-start"> 
+                                <h1>Example headline.</h1> 
+                                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p> 
+                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> 
+                            </div> 
+                        </div> 
+                    </div> 
+
+                    <div class="carousel-item"> 
+                        <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> 
+                            <div class="container"> 
+                                <div class="carousel-caption"> 
+                                <h1>Another example headline.</h1> 
+                                <p>Some representative placeholder content for the second slide of the carousel.</p> 
+                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> </div> </div> 
+                            </div> 
+                            <div class="carousel-item active"> 
+                                    <svg aria-hidden="true" class="bd-placeholder-img " height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> <div class="container"> <div class="carousel-caption text-end"> 
+                                            <h1>One more for good measure.</h1> <p>Some representative placeholder content for the third slide of this carousel.</p> 
+                                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"> 
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+                                <span class="visually-hidden">Previous</span> </button> 
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"> 
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+                                    <span class="visually-hidden">Next</span> 
+                                </button> 
+                            </div>
+
+                            <section>
+                                <div class="container my-5"> 
+                                    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"> 
+                                        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"> 
+                                            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Painel Solar</h1> 
+                                            <p class="lead">Reduza seu impacto ambiental, instale paineis solares em sua Residencia hoje! Veja os beneficios pra sua carteira alem dos beneficios para o meio ambiente.</p> 
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"> 
+                                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Adicionar ao carrinhho <i class="fa-solid fa-cart-arrow-down"></i> </button> 
+                                                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Saiba mais</button> 
+                                            </div> 
+                                        </div> 
+                                        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg"> 
+                                            <img class="rounded-lg-3" src="https://bionovasolar.com.br/uploads/foto-1.jpeg" alt="" width="720"> 
+                                        </div> 
+                                    </div> 
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="container px-4 py-5" id="custom-cards" > 
+                                    <h2 class="pb-2 border-bottom">Roupas Sustentaveis</h2> 
+                                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"> 
+                                        <div class="col"> 
+                                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./src/imgs/Screenshot\ 2025-08-28\ 153159.png');"> 
+                                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold contraste">Camisa Mar</h3> 
+                                                    <ul class="d-flex list-unstyled mt-auto"> 
+                                                        <li class="me-auto"> 
+                                                            <img src="https://i.pinimg.com/736x/fa/1d/c2/fa1dc2815dc2f980fad58ba85441b2cb.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                                                        </li> 
+                                                        <li class="d-flex align-items-center me-3"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                                                <use xlink:href="#geo-fill"></use>
+                                                            </svg>
+                                                            <small><button class="btn btn-success d-inline-flex align-items-center" type="button"><i class="fa-solid fa-circle-question"></i></button></small> 
+                                                        </li> 
+                                                        <li class="d-flex align-items-center"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                                                <use xlink:href="#calendar3"></use>
+                                                            </svg> 
+                                                            <small><button class="btn btn-primary d-inline-flex align-items-center" type="button"><i class="fa-solid fa-cart-plus"></i></button></small> 
+                                                        </li> 
+                                                    </ul> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                        <div class="col"> 
+                                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./src/imgs/Screenshot\ 2025-08-28\ 153835.png');"> 
+                                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold contraste">Camiseta Estonada</h3> 
+                                                    <ul class="d-flex list-unstyled mt-auto"> <li class="me-auto"> 
+                                                        <img src="https://i.pinimg.com/736x/fa/1d/c2/fa1dc2815dc2f980fad58ba85441b2cb.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                                                    </li> 
+                                                    <li class="d-flex align-items-center me-3"> 
+                                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                                            <use xlink:href="#geo-fill"></use>
+                                                        </svg> 
+                                                        <small><button class="btn btn-success d-inline-flex align-items-center" type="button"><i class="fa-solid fa-circle-question"></i></button></small> 
+                                                    </li> 
+                                                    <li class="d-flex align-items-center"> 
+                                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                                            <use xlink:href="#calendar3"></use>
+                                                        </svg> 
+                                                        <small><button class="btn btn-primary d-inline-flex align-items-center" type="button"><i class="fa-solid fa-cart-arrow-down"></i></button></small> 
+                                                    </li> 
+                                                </ul> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col"> 
+                                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./src/imgs/Screenshot\ 2025-08-28\ 154349.png');"> 
+                                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
+                                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold contraste">Vestido Midi</h3> 
+                                                <ul class="d-flex list-unstyled mt-auto"> 
+                                                    <li class="me-auto"> 
+                                                        <img src="https://i.pinimg.com/736x/fa/1d/c2/fa1dc2815dc2f980fad58ba85441b2cb.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                                                    </li> 
+                                                    <li class="d-flex align-items-center me-3"> 
+                                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                                            <use xlink:href="#geo-fill"></use>
+                                                        </svg> 
+                                                        <small><button class="btn btn-success d-inline-flex align-items-center" type="button"><i class="fa-solid fa-circle-question"></i></button></small> 
+                                                    </li> 
+                                                    <li class="d-flex align-items-center"> 
+                                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                                            <use xlink:href="#calendar3"></use></svg> 
+                                                            <small><button class="btn btn-primary d-inline-flex align-items-center" type="button"><i class="fa-solid fa-cart-arrow-down"></i></button></small> 
+                                                        </li> 
+                                                    </ul> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <div class="container px-4 py-5" id="custom-cards"> 
+                                    <h2 class="pb-2 border-bottom">Produtos Reutilizaveis</h2> 
+                                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"> 
+                                        <div class="col"> 
+                                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://acdn-us.mitiendanube.com/stores/001/248/765/products/canudo-inox-3-pcs1-8101d86d829a3bd7fd16810107191598-640-0.jpg');"> 
+                                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold contraste">Canudos de Metal</h3> 
+                                                    <ul class="d-flex list-unstyled mt-auto"> <li class="me-auto"> 
+                                                        <img src="./src/imgs/recycle-icon.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> </li> 
+                                                        <li class="d-flex align-items-center me-3"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                                                <use xlink:href="#geo-fill"></use>
+                                                            </svg>
+                                                            <small><button class="btn btn-success d-inline-flex align-items-center" type="button"><i class="fa-solid fa-circle-question"></i></button></small> 
+                                                        </li> 
+                                                            <li class="d-flex align-items-center"> 
+                                                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                                                    <use xlink:href="#calendar3"></use>
+                                                                </svg> 
+                                                                <small><button class="btn btn-primary d-inline-flex align-items-center" type="button"><i class="fa-solid fa-cart-arrow-down"></i></button></small> 
+                                                            </li> 
+                                                        </ul> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                            <div class="col"> 
+                                                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./src/imgs/Screenshot\ 2025-08-28\ 155304.png');"> 
+                                                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                                                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold contraste">Sacola de Pano</h3> 
+                                                        <ul class="d-flex list-unstyled mt-auto"> <li class="me-auto"> 
+                                                            <img src="./src/imgs/recycle-icon.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                                                        </li> 
+                                                        <li class="d-flex align-items-center me-3"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                                                <use xlink:href="#geo-fill"></use>
+                                                            </svg> 
+                                                            <small><button class="btn btn-success d-inline-flex align-items-center" type="button"><i class="fa-solid fa-circle-question"></i></button></small> 
+                                                        </li> 
+                                                        <li class="d-flex align-items-center"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                                                <use xlink:href="#calendar3"></use>
+                                                            </svg> 
+                                                            <small><button class="btn btn-primary d-inline-flex align-items-center" type="button"><i class="fa-solid fa-cart-arrow-down"></i></button></small> 
+                                                        </li> 
+                                                    </ul> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                        <div class="col"> 
+                                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./src/imgs/Screenshot\ 2025-08-28\ 155651.png');"> 
+                                                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
+                                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold contraste">Garrafa de Aluminio</h3> 
+                                                    <ul class="d-flex list-unstyled mt-auto"> 
+                                                        <li class="me-auto"> 
+                                                            <img src="./src/imgs/recycle-icon.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                                                        </li> 
+                                                        <li class="d-flex align-items-center me-3"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                                                <use xlink:href="#geo-fill"></use>
+                                                            </svg> 
+                                                            <small><button class="btn btn-success d-inline-flex align-items-center" type="button"><i class="fa-solid fa-circle-question"></i></button></small> 
+                                                        </li> 
+                                                        <li class="d-flex align-items-center"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                                                <use xlink:href="#calendar3"></use></svg> 
+                                                                <small><button class="btn btn-primary d-inline-flex align-items-center" type="button"><i class="fa-solid fa-cart-arrow-down"></i></button></small> 
+                                                            </li> 
+                                                        </ul> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                <div class="container px-4 py-5" id="custom-cards"> 
+                                    <h2 class="pb-2 border-bottom">Produtos Biodegraveis</h2> 
+                                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"> 
+                                        <div class="col"> 
+                                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./src/imgs/img01.jpg');"> 
+                                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold contraste"> Pratos, Talhere e Copos Biodegraveis</h3> 
+                                                    <ul class="d-flex list-unstyled mt-auto"> <li class="me-auto"> 
+                                                        <img src="https://i.pinimg.com/736x/fa/1d/c2/fa1dc2815dc2f980fad58ba85441b2cb.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> </li> 
+                                                        <li class="d-flex align-items-center me-3"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                                                <use xlink:href="#geo-fill"></use>
+                                                            </svg>
+                                                            <small><button class="btn btn-success d-inline-flex align-items-center" type="button"><i class="fa-solid fa-circle-question"></i></button></small> 
+                                                        </li> 
+                                                            <li class="d-flex align-items-center"> 
+                                                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                                                    <use xlink:href="#calendar3"></use>
+                                                                </svg> 
+                                                                <small><button class="btn btn-primary d-inline-flex align-items-center" type="button"><i class="fa-solid fa-cart-arrow-down"></i></button></small> 
+                                                            </li> 
+                                                        </ul> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                            <div class="col"> 
+                                                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./src/imgs/Screenshot\ 2025-08-28\ 160500.png');"> 
+                                                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                                                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold contraste">Caneca Biodegradevel</h3> 
+                                                        <ul class="d-flex list-unstyled mt-auto"> <li class="me-auto"> 
+                                                            <img src="https://i.pinimg.com/736x/fa/1d/c2/fa1dc2815dc2f980fad58ba85441b2cb.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                                                        </li> 
+                                                        <li class="d-flex align-items-center me-3"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                                                <use xlink:href="#geo-fill"></use>
+                                                            </svg> 
+                                                            <small><button class="btn btn-success d-inline-flex align-items-center" type="button"><i class="fa-solid fa-circle-question"></i></button></small> 
+                                                        </li> 
+                                                        <li class="d-flex align-items-center"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                                                <use xlink:href="#calendar3"></use>
+                                                            </svg> 
+                                                            <small>
+                                                                <button class="btn btn-primary d-inline-flex align-items-center" type="button"><i class="fa-solid fa-cart-arrow-down"></i></button>
+                                                            </small> 
+                                                        </li> 
+                                                    </ul> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                        <div class="col"> 
+                                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_875050-MLB89052329260_082025-O-kit-10-escovas-de-dentes-bambu-embal-individual-ecologica.webp');"> 
+                                                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
+                                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold contraste">Escova de dente de fibra de Bambu</h3> 
+                                                    <ul class="d-flex list-unstyled mt-auto"> 
+                                                        <li class="me-auto"> 
+                                                            <img src="https://i.pinimg.com/736x/fa/1d/c2/fa1dc2815dc2f980fad58ba85441b2cb.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                                                        </li> 
+                                                        <li class="d-flex align-items-center me-3"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                                                <use xlink:href="#geo-fill"></use>
+                                                            </svg> 
+                                                            <small><button class="btn btn-success d-inline-flex align-items-center" type="button"><i class="fa-solid fa-circle-question"></i></button></small> 
+                                                        </li> 
+                                                        <li class="d-flex align-items-center"> 
+                                                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                                                <use xlink:href="#calendar3"></use></svg> 
+                                                                <small><button class="btn btn-primary d-inline-flex align-items-center" type="button"><i class="fa-solid fa-cart-arrow-down"></i></button></small> 
+                                                            </li> 
+                                                        </ul> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                    </div>
+                            </section>
+        </main>
+                        
+
+
+        <footer class="footer mt-auto py-3 bg-body-tertiary"> 
+            <div class="container"> 
+                <span class="text-body-secondary">Place sticky footer content here.</span> 
+            </div> 
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
