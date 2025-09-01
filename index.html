@@ -1,62 +1,564 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>EcoEssência</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="/src/css/style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg p-3">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menuOffcanvas"
+            aria-controls="menuOffcanvas"
+          >
+            <i class="bi bi-list"></i>
+          </button>
 
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas">
-                    <i class="bi bi-list"></i>
-                </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="/src/imgs/logo.png" alt="Logo EcoEssência" />
+          </a>
 
-                <a class="navbar-brand" href="#">
-                    <img src="/src/imgs/logo.png" alt="Logo EcoEssência">
-                </a>
+          <ul class="navbar-nav ms-auto d-none d-lg-flex mx-3">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/src/pages/roupas.html"
+                >Roupas e Acessórios</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/src/pages/beleza.html">Beleza</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/src/pages/casa.html">Casa</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/src/pages/tecnologia.html"
+                >Tecnologia</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/src/pages/contato.html">Contato</a>
+            </li>
+          </ul>
 
-                <ul class="navbar-nav ms-auto d-none d-lg-flex">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/roupas.html">Roupas e Acessórios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/beleza.html">Beleza</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/casa.html">Casa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/tecnologia.html">Tecnologia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/contato.html">Contato</a></li>
-                </ul>
-
-                <a href="#" class="cart-icon">
-                    <i class="bi bi-bag"></i>
-                </a>
-            </div>
-        </nav>
-
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="menuOffcanvasLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/roupas.html">Roupas e Acessórios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/beleza.html">Beleza</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/casa.html">Casa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/tecnologia.html">Tecnologia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/contato.html">Contato</a></li>
-                </ul>
-            </div>
+          <a href="#" class="cart-icon">
+            <i class="bi bi-bag-fill"></i>
+          </a>
         </div>
+      </nav>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="menuOffcanvas"
+        aria-labelledby="menuOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <img src="src/imgs/logo.png" alt="Logo EcoEssência" />
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item py-2">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="/src/pages/roupas.html"
+                >Roupas e Acessórios</a
+              >
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="/src/pages/beleza.html">Beleza</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="/src/pages/casa.html">Casa</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="/src/pages/tecnologia.html"
+                >Tecnologia</a
+              >
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="/src/pages/contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
+    <main class="container">
+      <!--Carrossel  -->
+      <section class="my-4">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner rounded-5">
+            <div class="carousel-item active">
+              <img
+                class="img-fluid d-block d-md-none"
+                src="src/imgs/banner/banner-sm.png"
+                alt="Banner pequeno"
+              />
+              <img
+                class="img-fluid d-none d-md-block d-lg-none"
+                src="src/imgs/banner/banner-md.png"
+                alt="Banner médio"
+              />
+              <img
+                class="img-fluid d-none d-lg-block"
+                src="src/imgs/banner/banner-lg.png"
+                alt="Banner grande"
+              />
+              <div class="carousel-caption text-start">
+                <h5>Estilo que respeita o planeta</h5>
+                <p>
+                  Descubra roupas confortáveis, atemporais e produzidas com
+                  responsabilidade.
+                </p>
+                <a
+                  class="d-inline-flex align-items-center gap-2"
+                  href="src/pages/roupas.html"
+                >
+                  Compre Agora! <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-fluid d-block d-md-none"
+                src="src/imgs/banner/banner2-sm.png"
+                alt="Banner pequeno"
+              />
+              <img
+                class="img-fluid d-none d-md-block d-lg-none"
+                src="src/imgs/banner/banner2-md.png"
+                alt="Banner médio"
+              />
+              <img
+                class="img-fluid d-none d-lg-block"
+                src="src/imgs/banner/banner2-lg.png"
+                alt="Banner grande"
+              />
+              <div class="carousel-caption text-start d-md-none">
+                <h5>Detalhes que transformam seu dia</h5>
+                <p>
+                  Bolsas, cintos e calçados feitos com design consciente e
+                  materiais eco-friendly.
+                </p>
+                <a
+                  class="d-inline-flex align-items-center gap-2"
+                  href="src/pages/acessorios.html"
+                >
+                  Compre Agora! <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+              <div
+                class="carousel-caption d-none d-md-flex justify-content-between align-items-center text-start"
+              >
+                <div>
+                  <h5>Detalhes que transformam seu dia</h5>
+                  <p>
+                    Bolsas, cintos e calçados feitos com design consciente e
+                    materiais eco-friendly.
+                  </p>
+                </div>
+                <a
+                  class="btn btn-outline-dark d-inline-flex align-items-center gap-2"
+                  href="src/pages/roupas.html"
+                >
+                  Compre Agora! <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="img-fluid d-block d-md-none"
+                src="src/imgs/banner/banner3-sm.png"
+                alt="Banner pequeno"
+              />
+              <img
+                class="img-fluid d-none d-md-block d-lg-none"
+                src="src/imgs/banner/banner3-md.png"
+                alt="Banner médio"
+              />
+              <img
+                class="img-fluid d-none d-lg-block"
+                src="src/imgs/banner/banner3-lg.png"
+                alt="Banner grande"
+              />
+              <div class="carousel-caption text-start d-md-none">
+                <h5>Converse com a gente</h5>
+                <p>
+                  Tire dúvidas, peça informações ou fale sobre pedidos
+                  especiais. Estamos aqui para ajudar!
+                </p>
+                <a
+                  class="d-inline-flex align-items-center gap-2"
+                  href="src/pages/contato.html"
+                >
+                  Fale Conosco <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+              <div
+                class="carousel-caption d-none d-md-flex justify-content-between align-items-center text-start"
+              >
+                <div>
+                  <h5>Converse com a gente</h5>
+                  <p>
+                    Tire dúvidas, peça informações ou fale sobre pedidos
+                    especiais. Estamos aqui para ajudar!
+                  </p>
+                </div>
+                <a
+                  class="btn btn-outline-dark d-inline-flex align-items-center gap-2"
+                  href="src/pages/contato.html"
+                >
+                  Fale Conosco <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Roupas Populares -->
+      <section class="container roupas__populares">
+        <h2 class="text-center d-md-none">Roupas Populares</h2>
+        <h2 class="d-none d-md-block text-start">Roupas Populares</h2>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card product-card">
+              <div class="position-relative">
+                <img
+                  src="src/imgs/roupas/roupa1.png"
+                  class="card-img-top w-auto"
+                  alt="Produto 1"
+                />
+                <i class="bi bi-heart card-heart-icon"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Daily Eco T-Shirt</h5>
+                <p class="card-text card-price">R$ 129,90</p>
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <a href="#" class="btn btn-adicionar-sacola"
+                  >Adicionar à sacola</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card product-card">
+              <div class="position-relative">
+                <img
+                  src="src/imgs/roupas/roupa2.png"
+                  class="card-img-top w-auto"
+                  alt="Produto 2"
+                />
+                <i class="bi bi-heart card-heart-icon"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Calça Jeans Reciclada</h5>
+                <p class="card-text card-price">R$ 229,90</p>
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <a href="#" class="btn btn-adicionar-sacola"
+                  >Adicionar à sacola</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card product-card">
+              <div class="position-relative">
+                <img
+                  src="src/imgs/roupas/roupa3.png"
+                  class="card-img-top w-auto"
+                  alt="Produto 3"
+                />
+                <i class="bi bi-heart card-heart-icon"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Camisa Linho Orgânico</h5>
+                <p class="card-text card-price">R$ 189,90</p>
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <a href="#" class="btn btn-adicionar-sacola"
+                  >Adicionar à sacola</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card product-card">
+              <div class="position-relative">
+                <img
+                  src="src/imgs/roupas/roupa4.png"
+                  class="card-img-top w-auto"
+                  alt="Produto 4"
+                />
+                <i class="bi bi-heart card-heart-icon"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jaqueta Eco Wind</h5>
+                <p class="card-text card-price">R$ 259,90</p>
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <a href="#" class="btn btn-adicionar-sacola"
+                  >Adicionar à sacola</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divisao">
+        <a href="src/pages/roupas.html"
+          ><i class="bi bi-arrow-down-circle-fill"></i
+        ></a>
+      </div>
+
+      <!-- Novos acessórios -->
+      <section class="container my-5 roupas__populares">
+        <h2 class="text-center d-md-none">Novos acessórios</h2>
+        <h2 class="d-none d-md-block text-start">Novos acessórios</h2>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card product-card ">
+              <div class="position-relative">
+                <img
+                  src="src/imgs/acessorios/acessorio1.png"
+                  class="card-img-top w-auto"
+                  alt="Produto 1"
+                />
+                <i class="bi bi-heart card-heart-icon"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ecobag Essencial</h5>
+                <p class="card-text card-price">R$ 300,00</p>
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <a href="#" class="btn btn-adicionar-sacola"
+                  >Adicionar à sacola</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card product-card">
+              <div class="position-relative">
+                <img
+                  src="src/imgs/acessorios/acessorio2.png"
+                  class="card-img-top w-auto"
+                  alt="Produto 2"
+                />
+                <i class="bi bi-heart card-heart-icon"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Óculos de Sol Bamboo</h5>
+                <p class="card-text card-price">R$ 400,000</p>
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <a href="#" class="btn btn-adicionar-sacola"
+                  >Adicionar à sacola</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card product-card">
+              <div class="position-relative">
+                <img
+                  src="src/imgs/acessorios/acessorio3.png"
+                  class="card-img-top w-auto"
+                  alt="Produto 3"
+                />
+                <i class="bi bi-heart card-heart-icon"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Chinelo Eco Confort</h5>
+                <p class="card-text card-price">R$ 100,00</p>
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <a href="#" class="btn btn-adicionar-sacola"
+                  >Adicionar à sacola</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card product-card">
+              <div class="position-relative">
+                <img
+                  src="src/imgs/acessorios/acessorio4.png"
+                  class="card-img-top w-auto"
+                  alt="Produto 4"
+                />
+                <i class="bi bi-heart card-heart-icon"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cinto Vegano Minimal</h5>
+                <p class="card-text card-price">R$ 139,90</p>
+                <div class="star-rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <a href="#" class="btn btn-adicionar-sacola"
+                  >Adicionar à sacola</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divisao">
+        <a href="src/pages/acessorios.html"
+          ><i class="bi bi-arrow-down-circle-fill"></i
+        ></a>
+      </div>
+    </main>
+
+    <footer class="footer text-center py-5">
+      <div class="links">
+        <i class="fa-brands fa-square-instagram fs-1"></i>
+        <i class="fa-brands fa-square-x-twitter fs-1"></i>
+        <i class="fa-brands fa-square-whatsapp fs-1"></i>
+      </div>
+
+      <p class="card-text py-3 fs-6">
+        2025 <i class="bi bi-c-circle"></i> EcoEssência — Todos os direitos
+        reservados.
+      </p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

@@ -1,263 +1,320 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
-    --cor-fundo: #F5F1E9;
-    --cor-fundo-nav: #f0e3d3;
-    --cor-texto-principal: #3D3D3D;
-    --cor-destaque: #6B7B61;
+  --cor-fundo: #f5f1e9;
+  --cor-fundo-nav: #f0e3d3;
+  --cor-texto-principal: #3d3d3d;
+  --cor-destaque: #6b7b61;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--cor-fundo);
-    font-family: 'Lora', serif;
+  background-color: var(--cor-fundo);
+  font-family: "Lora", serif;
 }
 
 /* navbar */
 
 .navbar {
-    background-color: var(--cor-fundo-nav);
-    border-bottom: 1px solid #e0dccc;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  background-color: var(--cor-fundo-nav);
+  border-bottom: 2px solid #e0dccc;
+  padding: 1rem 0;
 }
 
-.navbar-brand img {
-    margin-left: 20px;
-    height: 60px;
-    width: auto;
+.navbar-brand img,
+.offcanvas-header img {
+  margin-left: 20px;
+  height: 60px;
+  width: auto;
 }
 
-.navbar-toggler, .cart-icon {
-    border: none;
-    color: var(--cor-texto-principal);
-    font-size: 1.7rem;
-}
-
-.cart-icon img {
-    height: 32px;
-    width: auto;
+.navbar-toggler,
+.cart-icon {
+  border: none;
+  color: var(--cor-texto-principal);
+  font-size: 1.7rem;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.navbar .navbar-nav .nav-item {
-    margin-left: 1rem;
-    margin-right: 1rem;
+  box-shadow: none;
 }
 
 .navbar .navbar-nav .nav-link {
-    color: var(--cor-texto-principal);
-    font-size: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid transparent;
-    transition: color 0.3s, border-color 0.3s;
+  color: var(--cor-texto-principal);
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: var(--cor-destaque);
+  color: var(--cor-destaque);
 }
 
 .navbar .navbar-nav .nav-link.active {
-    font-weight: bold;
-    color: var(--cor-texto-principal);
-    border-bottom: 2px solid var(--cor-texto-principal);
+  font-weight: bold;
+  color: var(--cor-texto-principal);
+  border-bottom: 2px solid var(--cor-destaque);
 }
 
 .offcanvas {
-    background-color: #EDE7DA;
-    width: 280px;
-}
-
-.offcanvas-header {
-    padding: 1.5rem;
-}
-
-.offcanvas-title {
-    color: var(--cor-texto-principal);
-    font-weight: bold;
+  background-color: #ede7da;
 }
 
 .offcanvas-body .nav-link {
-    color: var(--cor-texto-principal);
-    font-size: 1.4rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    border-left: 4px solid transparent;
+  color: var(--cor-texto-principal);
+  font-size: 1.4rem;
 }
 
 .offcanvas-body .nav-link:hover {
-    color: var(--cor-destaque);
+  color: var(--cor-destaque);
 }
 
 .offcanvas-body .nav-link.active {
-    font-weight: bold;
-    border-left: 4px solid var(--cor-destaque);
-    border-bottom: none;
+  font-weight: bold;
+  border-left: 4px solid var(--cor-destaque);
+  border-bottom: none;
+  padding-left: 4%;
+}
+
+/* Carrossel */
+.carousel-indicators {
+  bottom: -40px;
+  margin: 1%;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--cor-texto-principal);
+  border: 1px solid #fff;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: var(--cor-destaque);
+}
+
+.carousel-caption p {
+  color: var(--cor-texto-principal);
+  font-weight: bolder;
+  width: 90%;
+}
+
+.carousel-caption a {
+  text-decoration: none;
+  border: 1px solid var(--cor-texto-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto-principal);
+  padding: 2%;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* Section Roupas */
+
+.roupas__populares {
+  margin: 15% 0 0;
+}
+
+.roupas__populares > h2 {
+  font-size: 2rem;
+  color: var(--cor-texto-principal);
+  margin: 3% 0;
+}
+
+.divisao {
+  margin-top: 5%;
+  border-bottom: 1px solid black;
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bi.bi-arrow-down-circle-fill {
+  position: absolute;
+  left: 50%;
+  bottom: -26px;
+  font-size: 2rem;
+  transform: translateX(-50%);
+  cursor: pointer;
+  color: var(--cor-destaque);
 }
 
 /* Página de Roupas */
 
 .titulo-pagina {
-    font-weight: 500;
-    color: var(--cor-texto-principal);
-    font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--cor-texto-principal);
+  font-size: 1.8rem;
 }
 
 .texto-descricao {
-    font-size: 0.9rem;
-    color: var(--cor-texto-principal);
-    max-width: 600px;
-    margin: 0 auto;
+  font-size: 0.9rem;
+  color: var(--cor-texto-principal);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .filtro-container {
-    border: 1px solid #e0dccc;
-    border-radius: 15px;
-    padding: 1.5rem;
-    background-color: var(--cor-fundo);
+  border: 1px solid #e0dccc;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background-color: var(--cor-fundo);
 }
 
 .filtro-titulo {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--cor-texto-principal);
-    margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--cor-texto-principal);
+  margin-bottom: 1rem;
 }
 
 .form-check {
-    margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .form-check-label {
-    font-size: 1rem;
-    color: var(--cor-texto-principal);
+  font-size: 1rem;
+  color: var(--cor-texto-principal);
 }
 
 .form-check-input {
-    border-color: var(--cor-texto-principal);
-    border-radius: 4px;
+  border-color: var(--cor-texto-principal);
+  border-radius: 4px;
 }
 
 .form-check-input:checked {
-    background-color: var(--cor-destaque);
-    border-color: var(--cor-destaque);
+  background-color: var(--cor-destaque);
+  border-color: var(--cor-destaque);
 }
 
 .form-check-input:focus {
-    box-shadow: 0 0 0 0.25rem rgba(107, 123, 97, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(107, 123, 97, 0.25);
 }
 
 .product-card {
-    border: 1px solid #e0dccc;
-    border-radius: 12px;
-    background-color: var(--cor-fundo);
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
+  border: 1px solid #e0dccc;
+  border-radius: 12px;
+  background-color: var(--cor-fundo);
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
 .product-card .card-img-top {
-    border-bottom: 1px solid #e0dccc;
+  border-bottom: 1px solid #e0dccc;
 }
 
 .product-card .card-heart-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
-    color: var(--cor-texto-principal);
-    cursor: pointer;
-    transition: color 0.3s;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: var(--cor-texto-principal);
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .product-card .card-heart-icon:hover {
-    color: #e74c3c;
+  color: #e74c3c;
 }
 
 .product-card .card-body {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .product-card .card-title {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--cor-texto-principal);
-    margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--cor-texto-principal);
+  margin-bottom: 0.25rem;
 }
 
 .product-card .card-price {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: var(--cor-destaque);
-    margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--cor-destaque);
+  margin-bottom: 0.5rem;
 }
 
 .product-card .star-rating {
-    color: #f39c12;
+  color: #f39c12;
 }
 
 .btn-adicionar-sacola {
-    background-color: var(--cor-destaque);
-    color: #FFFFFF;
-    width: 100%;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    padding: 8px;
-    transition: background-color 0.3s;
+  background-color: var(--cor-destaque);
+  color: #ffffff;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  padding: 8px;
+  transition: background-color 0.3s;
 }
 
 .btn-adicionar-sacola:hover {
-    background-color: #5a6b52;
-    color: #FFFFFF;
+  background-color: #5a6b52;
+  color: #ffffff;
 }
 
 /* Página de Contato */
 
 .contact-form-container {
-    background-color: var(--cor-fundo);
-    border: 1px solid #e0dccc;
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: var(--cor-fundo);
+  border: 1px solid #e0dccc;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .form-label {
-    color: var(--cor-texto-principal);
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+  color: var(--cor-texto-principal);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .form-control-custom {
-    border-radius: 25px;
-    border: 1px solid #cecbc2;
-    background-color: #FFFFFF;
-    padding: 10px 20px;
-    transition: border-color 0.3s, box-shadow 0.3s;
+  border-radius: 25px;
+  border: 1px solid #cecbc2;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .form-control-custom#mensagem {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .form-control-custom:focus {
-    border-color: var(--cor-destaque);
-    box-shadow: 0 0 0 0.25rem rgba(107, 123, 97, 0.25);
-    background-color: #FFFFFF;
+  border-color: var(--cor-destaque);
+  box-shadow: 0 0 0 0.25rem rgba(107, 123, 97, 0.25);
+  background-color: #ffffff;
 }
 
 .btn-enviar {
-    background-color: var(--cor-destaque);
-    color: #FFFFFF;
-    border-radius: 25px;
-    padding: 12px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    transition: background-color 0.3s;
+  background-color: var(--cor-destaque);
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
 }
 
 .btn-enviar:hover {
-    background-color: #5a6b52;
-    color: #FFFFFF;
+  background-color: #5a6b52;
+  color: #ffffff;
+}
+
+footer {
+  background-color: var(--cor-fundo-nav);
+  margin-top: 3%;
+  color: var(--cor-texto-principal);
 }
