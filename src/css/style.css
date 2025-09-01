@@ -12,6 +12,8 @@ body {
     font-family: 'Lora', serif;
 }
 
+/* navbar */
+
 .navbar {
     background-color: var(--cor-fundo-nav);
     border-bottom: 1px solid #e0dccc;
@@ -93,6 +95,8 @@ body {
     border-left: 4px solid var(--cor-destaque);
     border-bottom: none;
 }
+
+/* Página de Roupas */
 
 .titulo-pagina {
     font-weight: 500;
@@ -204,6 +208,55 @@ body {
 }
 
 .btn-adicionar-sacola:hover {
+    background-color: #5a6b52;
+    color: #FFFFFF;
+}
+
+/* Página de Contato */
+
+.contact-form-container {
+    background-color: var(--cor-fundo);
+    border: 1px solid #e0dccc;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.form-label {
+    color: var(--cor-texto-principal);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.form-control-custom {
+    border-radius: 25px;
+    border: 1px solid #cecbc2;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control-custom#mensagem {
+    border-radius: 15px;
+}
+
+.form-control-custom:focus {
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 0 0.25rem rgba(107, 123, 97, 0.25);
+    background-color: #FFFFFF;
+}
+
+.btn-enviar {
+    background-color: var(--cor-destaque);
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
     background-color: #5a6b52;
     color: #FFFFFF;
 }
