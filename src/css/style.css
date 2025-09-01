@@ -22,7 +22,8 @@ body {
 }
 
 .navbar-brand img {
-    height: 40px;
+    margin-left: 20px;
+    height: 60px;
     width: auto;
 }
 
