@@ -1,0 +1,92 @@
+.titulo-pagina {
+    font-weight: 500;
+    color: var(--cor-texto-principal);
+    font-size: 1.8rem;
+}
+
+.texto-descricao {
+    font-size: 0.9rem;
+    color: var(--cor-texto-principal);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo do Botão de Filtro */
+.btn-filtro {
+    background-color: var(--cor-texto-principal);
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 10px 40px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-filtro:hover {
+    background-color: var(--cor-destaque);
+    color: #FFFFFF;
+}
+
+/* Estilos dos Cartões de Produto */
+.product-card {
+    border: 1px solid #e0dccc;
+    border-radius: 12px;
+    background-color: var(--cor-fundo);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* Garante que a imagem não saia do raio da borda */
+}
+
+.product-card .card-img-top {
+    border-bottom: 1px solid #e0dccc;
+}
+
+.product-card .card-heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: var(--cor-texto-principal);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.product-card .card-heart-icon:hover {
+    color: #e74c3c; /* Cor vermelha para o hover */
+}
+
+.product-card .card-body {
+    padding: 1rem;
+}
+
+.product-card .card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-texto-principal);
+    margin-bottom: 0.25rem;
+}
+
+.product-card .card-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--cor-destaque);
+    margin-bottom: 0.5rem;
+}
+
+.product-card .star-rating {
+    color: #f39c12; /* Cor amarela para as estrelas */
+}
+
+.btn-adicionar-sacola {
+    background-color: var(--cor-destaque);
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn-adicionar-sacola:hover {
+    background-color: #5a6b52; /* Um verde um pouco mais escuro */
+    color: #FFFFFF;
+}
