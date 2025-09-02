@@ -321,23 +321,25 @@ footer {
 
 /* Descrição produtos */
 
-.btn-comprar {
+.btn-comprar { 
   background-color: var(--cor-destaque);
   color: #ffffff;
   width: fit-content;
+  min-width: 120px; 
   border-radius: 20px;
-  font-size: 0.9rem;
-  padding: 8px;
+  font-size: 1rem; 
+  padding: 10px 16px; 
   transition: background-color 0.3s;
 }
 
 .btn-sacola {
   background-color: #ffffff;
-  color:var(--cor-destaque);
+  color: var(--cor-destaque);
   width: fit-content;
+  min-width: 120px;
   border-radius: 20px;
-  font-size: 0.9rem;
-  padding: 8px;
+  font-size: 1rem;
+  padding: 10px 16px;
   transition: background-color 0.3s;
 }
 
