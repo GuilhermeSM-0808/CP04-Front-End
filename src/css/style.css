@@ -18,6 +18,10 @@ body {
   font-family: "Lora", serif;
 }
 
+h5{
+  white-space: nowrap;
+}
+
 /* navbar */
 
 .navbar {
@@ -29,7 +33,7 @@ body {
 .navbar-brand img,
 .offcanvas-header img {
   margin-left: 20px;
-  height: 60px;
+  height: 80px;
   width: auto;
 }
 
@@ -245,7 +249,8 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.product-card .star-rating {
+.product-card .star-rating,
+.product-details .star-rating{
   color: #f39c12;
 }
 
@@ -313,6 +318,8 @@ body {
   color: #ffffff;
 }
 
+/* Footer */
+
 footer {
   background-color: var(--cor-fundo-nav);
   margin-top: 3%;
@@ -321,50 +328,62 @@ footer {
 
 /* Descrição produtos */
 
+.product-image img {
+  width: 100%; 
+  height: auto;      
+}
+
+.product-details h2{
+  font-size: 2rem;
+  color: var(--cor-texto-principal);
+}
+
+.product-details .price{
+  color: var(--cor-destaque);
+  font-weight: bolder;
+}
+
+.product-details p{
+  font-size: 1rem;
+  color: var(--cor-texto-principal);
+}
+
+
 .btn-comprar { 
   background-color: var(--cor-destaque);
   color: #ffffff;
   width: fit-content;
-  min-width: 120px; 
   border-radius: 20px;
-  font-size: 1rem; 
+  font-size: 1.1rem; 
   padding: 10px 16px; 
   transition: background-color 0.3s;
 }
 
+.btn-comprar:hover{
+  background-color: #5a6b52;
+  color: #fff;
+}
+
+
 .btn-sacola {
-  background-color: #ffffff;
+  background-color: var(--cor-fundo);
   color: var(--cor-destaque);
-  width: fit-content;
-  min-width: 120px;
-  border-radius: 20px;
-  font-size: 1rem;
-  padding: 10px 16px;
+  border: 1px solid var(--cor-destaque);
+   border-radius: 20px;
+  font-size: 1.1rem; 
+  padding: 10px 16px; 
   transition: background-color 0.3s;
 }
 
-.product-container {
-  display: grid;
-  grid-template-columns: 300px 1fr; 
-  gap: 40px;
-  justify-content: center;  
-  align-items: start;
-  margin: 50px auto;
-  max-width: 1000px;        
-  padding: 0 20px;
+.btn-sacola:hover{
+  background-color: #5a6b52;
+  color: #fff;
 }
 
-.product-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;           
-}
 
-.product-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
+
+
+
+
 
 
