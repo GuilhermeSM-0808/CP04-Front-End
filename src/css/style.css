@@ -123,7 +123,7 @@ body {
   margin: 15% 0 0;
 }
 
-.roupas__populares > h2 {
+.roupas__populares>h2 {
   font-size: 2rem;
   color: var(--cor-texto-principal);
   margin: 3% 0;
@@ -318,3 +318,42 @@ footer {
   margin-top: 3%;
   color: var(--cor-texto-principal);
 }
+
+/* Descrição produtos */
+
+.btn-comprar {
+  background-color: #007b5e;
+  color: #fff;
+}
+
+.btn-sacola {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 300px 1fr; 
+  gap: 40px;
+  justify-content: center;  
+  align-items: start;
+  margin: 50px auto;
+  max-width: 1000px;        
+  padding: 0 20px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;           
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+
