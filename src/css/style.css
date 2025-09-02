@@ -380,10 +380,10 @@ footer {
   color: #fff;
 }
 
+.clicavel{
+  transition: transform 0.3s ease-in-out;
+}
 
-
-
-
-
-
-
+.clicavel:hover{
+  transform: scale(1.02);
+}
