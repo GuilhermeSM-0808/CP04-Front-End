@@ -322,14 +322,23 @@ footer {
 /* Descrição produtos */
 
 .btn-comprar {
-  background-color: #007b5e;
-  color: #fff;
+  background-color: var(--cor-destaque);
+  color: #ffffff;
+  width: fit-content;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  padding: 8px;
+  transition: background-color 0.3s;
 }
 
 .btn-sacola {
-  background-color: #f1f1f1;
-  color: #333;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  color:var(--cor-destaque);
+  width: fit-content;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  padding: 8px;
+  transition: background-color 0.3s;
 }
 
 .product-container {
